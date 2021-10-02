@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.cpp
+unistd.h
+-
+cstring
+-
+map
+-
+wait.h
+-
+sys/resource.h
+-
+signal.h
+-
+command.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.h
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.h
+iostream
+-
+string
+-
+vector
+-
+util.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.h
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.h
+iostream
+-
+string
+-
+vector
+-
+
