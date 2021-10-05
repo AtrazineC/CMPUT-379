@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstring>
 
 using namespace std;
 
@@ -23,8 +24,10 @@ vector<string> split(const string &str, char delim = ' ');
 
 vector<char *> string_vector_to_char_vector(vector<string> original);
 
-bool tokens_contain_pid(vector<char *> tokens);
+bool tokens_contain_pid(const vector<char *>& tokens);
 
 pid_t get_pid_from_tokens(vector<char *> tokens);
+
+char *trim_first_character(char *str);
 
 #endif //ASSIGNMENT1_UTIL_H

@@ -1,10 +1,8 @@
 #include <iostream>
 #include <string>
-#include <vector>
-#include <signal.h>
 
-#include "util.h"
 #include "command.h"
+#include "signal_handler.h"
 
 using namespace std;
 

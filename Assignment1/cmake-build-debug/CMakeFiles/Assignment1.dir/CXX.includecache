@@ -7,6 +7,46 @@
 #IncludeRegexTransform: 
 
 /mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.cpp
+command.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.h
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.h
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+unistd.h
+-
+cstring
+-
+map
+-
+wait.h
+-
+sys/resource.h
+-
+csignal
+-
+util.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.h
+process_handler.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.h
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/main.cpp
+iostream
+-
+string
+-
+command.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.h
+signal_handler.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.h
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.h
 unistd.h
 -
 cstring
@@ -19,16 +59,24 @@ sys/resource.h
 -
 signal.h
 -
-command.h
-/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.h
 
-/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.h
-iostream
--
-string
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.h
+map
 -
 vector
 -
+fcntl.h
+-
+iostream
+-
+process.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.h
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.h
+process_handler.h
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.h
+
+/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.cpp
 util.h
 /mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.h
 
@@ -38,5 +86,7 @@ iostream
 string
 -
 vector
+-
+cstring
 -
 

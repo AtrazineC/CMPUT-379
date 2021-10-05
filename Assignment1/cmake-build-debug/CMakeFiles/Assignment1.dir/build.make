@@ -96,11 +96,53 @@ CMakeFiles/Assignment1.dir/command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/command.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.cpp" -o CMakeFiles/Assignment1.dir/command.cpp.s
 
+CMakeFiles/Assignment1.dir/process.cpp.o: CMakeFiles/Assignment1.dir/flags.make
+CMakeFiles/Assignment1.dir/process.cpp.o: ../process.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Assignment1.dir/process.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/process.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp"
+
+CMakeFiles/Assignment1.dir/process.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/process.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp" > CMakeFiles/Assignment1.dir/process.cpp.i
+
+CMakeFiles/Assignment1.dir/process.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/process.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp" -o CMakeFiles/Assignment1.dir/process.cpp.s
+
+CMakeFiles/Assignment1.dir/process_handler.cpp.o: CMakeFiles/Assignment1.dir/flags.make
+CMakeFiles/Assignment1.dir/process_handler.cpp.o: ../process_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Assignment1.dir/process_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/process_handler.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp"
+
+CMakeFiles/Assignment1.dir/process_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/process_handler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp" > CMakeFiles/Assignment1.dir/process_handler.cpp.i
+
+CMakeFiles/Assignment1.dir/process_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/process_handler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp" -o CMakeFiles/Assignment1.dir/process_handler.cpp.s
+
+CMakeFiles/Assignment1.dir/signal_handler.cpp.o: CMakeFiles/Assignment1.dir/flags.make
+CMakeFiles/Assignment1.dir/signal_handler.cpp.o: ../signal_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Assignment1.dir/signal_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/signal_handler.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp"
+
+CMakeFiles/Assignment1.dir/signal_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/signal_handler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp" > CMakeFiles/Assignment1.dir/signal_handler.cpp.i
+
+CMakeFiles/Assignment1.dir/signal_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/signal_handler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp" -o CMakeFiles/Assignment1.dir/signal_handler.cpp.s
+
 # Object files for target Assignment1
 Assignment1_OBJECTS = \
 "CMakeFiles/Assignment1.dir/main.cpp.o" \
 "CMakeFiles/Assignment1.dir/util.cpp.o" \
-"CMakeFiles/Assignment1.dir/command.cpp.o"
+"CMakeFiles/Assignment1.dir/command.cpp.o" \
+"CMakeFiles/Assignment1.dir/process.cpp.o" \
+"CMakeFiles/Assignment1.dir/process_handler.cpp.o" \
+"CMakeFiles/Assignment1.dir/signal_handler.cpp.o"
 
 # External object files for target Assignment1
 Assignment1_EXTERNAL_OBJECTS =
@@ -108,9 +150,12 @@ Assignment1_EXTERNAL_OBJECTS =
 Assignment1: CMakeFiles/Assignment1.dir/main.cpp.o
 Assignment1: CMakeFiles/Assignment1.dir/util.cpp.o
 Assignment1: CMakeFiles/Assignment1.dir/command.cpp.o
+Assignment1: CMakeFiles/Assignment1.dir/process.cpp.o
+Assignment1: CMakeFiles/Assignment1.dir/process_handler.cpp.o
+Assignment1: CMakeFiles/Assignment1.dir/signal_handler.cpp.o
 Assignment1: CMakeFiles/Assignment1.dir/build.make
 Assignment1: CMakeFiles/Assignment1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Assignment1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Assignment1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

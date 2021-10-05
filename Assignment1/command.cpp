@@ -1,144 +1,76 @@
-#include <unistd.h>
-#include <cstring>
-#include <map>
-#include <wait.h>
-#include <sys/resource.h>
-#include <signal.h>
-
 #include "command.h"
 
-// TODO: move into separate file
-class Process {
-public:
-    enum class Status {
-        running,
-        paused,
-    };
+void print_resource_usage() {
+    struct rusage usage{};
+    getrusage(RUSAGE_CHILDREN, &usage);
 
-    pid_t pid;
-    string command;
-    Status status;
-
-    Process(pid_t pid, string command, Status status) {
-        this->pid = pid;
-        this->command = command;
-        this->status = status;
-    };
-
-    char get_status_code() {
-        if (status == Status::running) {
-            return 'R';
-        } else if (status == Status::paused) {
-            return 'P';
-        } else {
-            return ' ';
-        }
-    }
-};
-
-map<pid_t, Process> process_map = map<pid_t, Process>();
-
-Process *get_process(pid_t pid) {
-    if (process_map.find(pid) != process_map.end()) {
-        return &process_map.at(pid);
-    }
-
-    return nullptr;
+    printf("User time = %7d seconds\n", (int) usage.ru_utime.tv_sec);
+    printf("Sys  time = %7d seconds\n\n", (int) usage.ru_stime.tv_sec);
 }
 
-void new_process(vector<char *> tokens, string line) {
-    // Check we are under max Process count
-    if (process_map.size() > MAX_PT_ENTRIES) {
-        printf("Maximum Process count exceeded\n");
-        return;
-    }
+int get_resource_usage_for_pid(pid_t pid) {
+    int process_time;
+    char buffer[100];
+    FILE *fp;
 
-    // Fork
-    pid_t pid = fork();
+    sprintf(buffer, "ps -p %d -o times=", pid);
+    fp = popen(buffer, "r");
+    fscanf(fp, "%d", &process_time);
+    pclose(fp);
 
-    if (pid < 0) {
-        printf("Fork failed\n");
-        exit(1);
-    }
-
-    if (pid == 0) {
-        // Child
-
-        // Convert to array of char *
-        char *argv[tokens.size() + 1];
-        for (int i = 0; i < tokens.size(); i++) {
-            argv[i] = tokens[i];
-        }
-        argv[tokens.size() + 1] = nullptr;
-
-        // Execvp
-        if (execvp(argv[0], argv) < 0) {
-            printf("execvp error\n");
-            _exit(0);
-        }
-    } else {
-        // Check if background Process
-        char *last_token = tokens[tokens.size() - 1];
-        bool is_background = (strcmp(last_token, "&") == 0);
-
-        // Add to unordered_map of processes
-        Process process = Process(pid, line, Process::Status::running);
-        process_map.emplace(pid, process);
-
-        if (!is_background) {
-            wait(nullptr);
-
-            // Clean up stuff
-            process_map.erase(pid);
-        }
-    }
+    return process_time;
 }
 
 void command_exit() {
     // Clean up all the processes
-    for (auto &it : process_map) {
+    for (auto &it : *get_process_map()) {
         pid_t pid = it.second.pid;
+        kill(pid, SIGCONT);
         kill(pid, SIGTERM);
-        waitpid(pid, NULL, 0);
+        waitpid(pid, nullptr, 0);
         kill(pid, SIGKILL);
     }
 
+    get_process_map()->clear();
+
+    printf("\nResources used:\n");
+    print_resource_usage();
+
     fflush(stdout);
-    _exit(0);
+    _exit(EXIT_SUCCESS);
 }
 
 void command_jobs() {
     printf("\nRunning processes:\n");
 
     // List out processes, process ids, etc.
-    if (!process_map.empty()) {
-        printf(" #    PID S SEC COMMAND\n");
+    if (!get_process_map()->empty()) {
+        printf(" #      PID S SEC COMMAND\n");
         int position = 0;
 
-        for (auto &it : process_map) {
+        for (auto &it : *get_process_map()) {
             Process process = it.second;
+
+            // Get the resource usage of this process with pipe
+            int process_time = get_resource_usage_for_pid(process.pid);
 
             // Print the process state
             printf(
-                    "%2u: %5u %c %3u %s\n",
+                    "%2d: %7d %c %3d %s\n",
                     position,
                     process.pid,
                     process.get_status_code(),
-                    0,
+                    process_time,
                     process.command.c_str());
 
             position++;
         }
     }
 
-    printf("Processes = %d active\n", (int) process_map.size());
+    printf("Processes = %7d active\n", (int) get_process_map()->size());
     printf("Completed processes:\n");
 
-    struct rusage usage{};
-    getrusage(RUSAGE_SELF, &usage);
-
-    printf("User time = %7d seconds\n", (int) usage.ru_utime.tv_sec);
-    printf("Sys  time = %7d seconds\n\n", (int) usage.ru_stime.tv_sec);
+    print_resource_usage();
 }
 
 void command_kill(const vector<char *> &tokens) {
@@ -147,10 +79,11 @@ void command_kill(const vector<char *> &tokens) {
         Process *process = get_process(pid);
 
         if (process != nullptr) {
+            kill(pid, SIGCONT); // Resume the process so it can be terminated
             kill(pid, SIGTERM);
-            waitpid(pid, NULL, 0);
+            waitpid(pid, nullptr, 0);
             kill(pid, SIGKILL);
-            process_map.erase(pid);
+            get_process_map()->erase(pid);
         } else {
             printf("Couldn't find process with pid %d\n", pid);
         }
@@ -206,7 +139,9 @@ void command_wait(const vector<char *> &tokens) {
         Process *process = get_process(pid);
 
         if (process != nullptr) {
-            waitpid(get_pid_from_tokens(tokens), nullptr, WNOHANG);
+            if (waitpid(get_pid_from_tokens(tokens), nullptr, 0) > 0) {
+                get_process_map()->erase(pid);
+            }
         } else {
             printf("Couldn't find process with pid %d\n", pid);
         }
@@ -215,7 +150,7 @@ void command_wait(const vector<char *> &tokens) {
     }
 }
 
-bool check_tokens(vector<char *> tokens) {
+bool check_tokens(const vector<char *> &tokens) {
     if (tokens.size() > MAX_ARGS) {
         printf("Too many arguments (maximum %d)\n", MAX_ARGS);
         return false;
@@ -233,10 +168,76 @@ bool check_tokens(vector<char *> tokens) {
     return true;
 }
 
+void push_input_to_args(vector<char *> &args, char *file_name) {
+    ifstream input((string) file_name);
+
+    // Split each line and put into args
+    string line;
+    while (getline(input, line)) {
+        vector<string> split_input = split(line);
+        vector<char *> input_tokens = string_vector_to_char_vector(split_input);
+
+        for (char *input_token : input_tokens) {
+            args.push_back(input_token);
+        }
+    }
+}
+
+vector<char *> get_args(const vector<char *> &tokens) {
+    vector<char *> args = vector<char *>();
+
+    if (tokens.size() > 1) {
+        for (int i = 1; i < tokens.size(); i++) {
+            char *token = tokens[i];
+
+            // Last token may be an ampersand
+            // If it is, don't put it in args
+            if ((i != tokens.size() - 1) || (strcmp(token, "&") != 0)) {
+                // If input file, append input to current arg list
+                if (token[0] == '<') {
+                    push_input_to_args(args, trim_first_character(token));
+                } else if (token[0] != '>') { // Don't append tokens for file output to args
+                    args.push_back(token);
+                }
+            }
+        }
+    }
+
+    return args;
+}
+
+char *get_output_file_name(const vector<char *>& tokens) {
+    for (char *token : tokens) {
+        if (token[0] == '>') {
+            return trim_first_character(token);
+        }
+    }
+
+    return nullptr;
+}
+
+bool check_if_background(vector<char *> tokens) {
+    if (tokens.size() > 1) {
+        char *last_token = tokens[tokens.size() - 1];
+        return strcmp(last_token, "&") == 0;
+    }
+
+    return false;
+}
+
 void run_tokens(vector<char *> tokens, string line) {
     if (!tokens.empty()) {
         // Get command (first token)
         string command = tokens[0];
+
+        // Get args
+        vector<char *> args = get_args(tokens);
+
+        // Check if output file (nullptr if no output file)
+        char *output_file_name = get_output_file_name(tokens);
+
+        // Get if background process
+        bool is_background = check_if_background(tokens);
 
         // Process command
         if (command == "exit") {
@@ -254,7 +255,7 @@ void run_tokens(vector<char *> tokens, string line) {
         } else if (command == "wait") {
             command_wait(tokens);
         } else if (!command.empty()) {
-            new_process(tokens, line);
+            new_process(command, args, output_file_name, is_background, line);
         }
     }
 }
@@ -279,23 +280,3 @@ void run_command(string line) {
         run_tokens(tokens, line);
     }
 }
-
-void signal_handler(int signum) {
-    fprintf(stdout, "\n");
-
-    // Detect when a child process has ended for cleanup
-    if (signum == SIGCHLD) {
-
-    }
-}
-
-void handle_signals() {
-    struct sigaction sa;
-    sa.sa_flags = 0;
-    sigemptyset(&sa.sa_mask);
-    sa.sa_handler = signal_handler;
-    sigaction(SIGINT, &sa, nullptr);
-    sigaction(SIGTSTP, &sa, nullptr);
-    sigaction(SIGCHLD, &sa, nullptr);
-}
-

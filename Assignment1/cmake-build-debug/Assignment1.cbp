@@ -91,6 +91,24 @@
 		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/main.cpp">
 			<Option target="Assignment1"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp">
+			<Option target="Assignment1"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.h">
+			<Option target="Assignment1"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp">
+			<Option target="Assignment1"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.h">
+			<Option target="Assignment1"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp">
+			<Option target="Assignment1"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.h">
+			<Option target="Assignment1"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.cpp">
 			<Option target="Assignment1"/>
 		</Unit>

@@ -1,11 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <cstring>
-
 #include "util.h"
-
-using namespace std;
 
 string rtrim(const string &str) {
     size_t end = str.find_last_not_of(" \n\r\t\f\v");
@@ -32,21 +25,19 @@ vector<string> split(const string &str, char delim) {
     return result;
 }
 
-char *convert(const string &s) {
-    char *pc = new char[s.size()+1];
-    strcpy(pc, s.c_str());
-
-    return pc;
-}
-
 vector<char *> string_vector_to_char_vector(vector<string> original) {
-    vector<char *> conversion;
-    transform(original.begin(), original.end(), back_inserter(conversion), convert);
+    vector<char *> conversion = vector<char *>();
+
+    for (const auto &str : original) {
+        char *charStr = new char[str.size() + 1];
+        strcpy(charStr, str.c_str());
+        conversion.push_back(charStr);
+    }
 
     return conversion;
 }
 
-bool tokens_contain_pid(vector<char *> tokens) {
+bool tokens_contain_pid(const vector<char *>& tokens) {
     if (tokens.size() < 2) {
         return false;
     }
@@ -59,4 +50,8 @@ pid_t get_pid_from_tokens(vector<char *> tokens) {
     pid_t pid = atoi(pid_token);
 
     return pid;
+}
+
+char *trim_first_character(char *str) {
+    return str + 1;
 }

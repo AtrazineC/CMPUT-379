@@ -177,6 +177,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+process.o: process.cpp.o
+
+.PHONY : process.o
+
+# target to build an object file
+process.cpp.o:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/process.cpp.o
+.PHONY : process.cpp.o
+
+process.i: process.cpp.i
+
+.PHONY : process.i
+
+# target to preprocess a source file
+process.cpp.i:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/process.cpp.i
+.PHONY : process.cpp.i
+
+process.s: process.cpp.s
+
+.PHONY : process.s
+
+# target to generate assembly for a file
+process.cpp.s:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/process.cpp.s
+.PHONY : process.cpp.s
+
+process_handler.o: process_handler.cpp.o
+
+.PHONY : process_handler.o
+
+# target to build an object file
+process_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/process_handler.cpp.o
+.PHONY : process_handler.cpp.o
+
+process_handler.i: process_handler.cpp.i
+
+.PHONY : process_handler.i
+
+# target to preprocess a source file
+process_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/process_handler.cpp.i
+.PHONY : process_handler.cpp.i
+
+process_handler.s: process_handler.cpp.s
+
+.PHONY : process_handler.s
+
+# target to generate assembly for a file
+process_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/process_handler.cpp.s
+.PHONY : process_handler.cpp.s
+
+signal_handler.o: signal_handler.cpp.o
+
+.PHONY : signal_handler.o
+
+# target to build an object file
+signal_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/signal_handler.cpp.o
+.PHONY : signal_handler.cpp.o
+
+signal_handler.i: signal_handler.cpp.i
+
+.PHONY : signal_handler.i
+
+# target to preprocess a source file
+signal_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/signal_handler.cpp.i
+.PHONY : signal_handler.cpp.i
+
+signal_handler.s: signal_handler.cpp.s
+
+.PHONY : signal_handler.s
+
+# target to generate assembly for a file
+signal_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Assignment1.dir/build.make CMakeFiles/Assignment1.dir/signal_handler.cpp.s
+.PHONY : signal_handler.cpp.s
+
 util.o: util.cpp.o
 
 .PHONY : util.o
@@ -219,6 +300,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... process.o"
+	@echo "... process.i"
+	@echo "... process.s"
+	@echo "... process_handler.o"
+	@echo "... process_handler.i"
+	@echo "... process_handler.s"
+	@echo "... signal_handler.o"
+	@echo "... signal_handler.i"
+	@echo "... signal_handler.s"
 	@echo "... util.o"
 	@echo "... util.i"
 	@echo "... util.s"

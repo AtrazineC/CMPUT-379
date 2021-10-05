@@ -6,6 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.cpp" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/command.cpp.o"
   "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/main.cpp" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/main.cpp.o"
+  "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/process.cpp.o"
+  "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/process_handler.cpp.o"
+  "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/signal_handler.cpp.o"
   "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.cpp" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
