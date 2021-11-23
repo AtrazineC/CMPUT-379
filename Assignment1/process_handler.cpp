@@ -45,7 +45,7 @@ void new_process(string command, vector<char *> args, char *output_file_name, bo
             freopen(output_file_name, "w", stdout);
         }
 
-        if (execvp(command.c_str(), argv) < 0) {
+        if (execvp(argv[0], argv) < 0) {
             printf("execvp error\n");
             _exit(EXIT_FAILURE);
         }

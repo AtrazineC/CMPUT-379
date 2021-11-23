@@ -187,7 +187,7 @@ vector<char *> get_args(const vector<char *> &tokens) {
     vector<char *> args = vector<char *>();
 
     if (tokens.size() > 1) {
-        for (int i = 1; i < tokens.size(); i++) {
+        for (int i = 0; i < tokens.size(); i++) {
             char *token = tokens[i];
 
             // Last token may be an ampersand

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug"
+CMAKE_BINARY_DIR = "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Assignment1.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/Assignment1.dir/flags.make
 
 CMakeFiles/Assignment1.dir/main.cpp.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment1.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/main.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Assignment1.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/main.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/main.cpp"
 
 CMakeFiles/Assignment1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/main.cpp" > CMakeFiles/Assignment1.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/main.cpp" > CMakeFiles/Assignment1.dir/main.cpp.i
 
 CMakeFiles/Assignment1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/main.cpp" -o CMakeFiles/Assignment1.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/main.cpp" -o CMakeFiles/Assignment1.dir/main.cpp.s
 
 CMakeFiles/Assignment1.dir/util.cpp.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/util.cpp.o: ../util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Assignment1.dir/util.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/util.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Assignment1.dir/util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/util.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/util.cpp"
 
 CMakeFiles/Assignment1.dir/util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.cpp" > CMakeFiles/Assignment1.dir/util.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/util.cpp" > CMakeFiles/Assignment1.dir/util.cpp.i
 
 CMakeFiles/Assignment1.dir/util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/util.cpp" -o CMakeFiles/Assignment1.dir/util.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/util.cpp" -o CMakeFiles/Assignment1.dir/util.cpp.s
 
 CMakeFiles/Assignment1.dir/command.cpp.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/command.cpp.o: ../command.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Assignment1.dir/command.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/command.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Assignment1.dir/command.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/command.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/command.cpp"
 
 CMakeFiles/Assignment1.dir/command.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/command.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.cpp" > CMakeFiles/Assignment1.dir/command.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/command.cpp" > CMakeFiles/Assignment1.dir/command.cpp.i
 
 CMakeFiles/Assignment1.dir/command.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/command.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/command.cpp" -o CMakeFiles/Assignment1.dir/command.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/command.cpp" -o CMakeFiles/Assignment1.dir/command.cpp.s
 
 CMakeFiles/Assignment1.dir/process.cpp.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/process.cpp.o: ../process.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Assignment1.dir/process.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/process.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Assignment1.dir/process.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/process.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/process.cpp"
 
 CMakeFiles/Assignment1.dir/process.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/process.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp" > CMakeFiles/Assignment1.dir/process.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/process.cpp" > CMakeFiles/Assignment1.dir/process.cpp.i
 
 CMakeFiles/Assignment1.dir/process.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/process.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process.cpp" -o CMakeFiles/Assignment1.dir/process.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/process.cpp" -o CMakeFiles/Assignment1.dir/process.cpp.s
 
 CMakeFiles/Assignment1.dir/process_handler.cpp.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/process_handler.cpp.o: ../process_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Assignment1.dir/process_handler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/process_handler.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Assignment1.dir/process_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/process_handler.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/process_handler.cpp"
 
 CMakeFiles/Assignment1.dir/process_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/process_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp" > CMakeFiles/Assignment1.dir/process_handler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/process_handler.cpp" > CMakeFiles/Assignment1.dir/process_handler.cpp.i
 
 CMakeFiles/Assignment1.dir/process_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/process_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/process_handler.cpp" -o CMakeFiles/Assignment1.dir/process_handler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/process_handler.cpp" -o CMakeFiles/Assignment1.dir/process_handler.cpp.s
 
 CMakeFiles/Assignment1.dir/signal_handler.cpp.o: CMakeFiles/Assignment1.dir/flags.make
 CMakeFiles/Assignment1.dir/signal_handler.cpp.o: ../signal_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Assignment1.dir/signal_handler.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/signal_handler.cpp.o -c "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Assignment1.dir/signal_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Assignment1.dir/signal_handler.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/signal_handler.cpp"
 
 CMakeFiles/Assignment1.dir/signal_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Assignment1.dir/signal_handler.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp" > CMakeFiles/Assignment1.dir/signal_handler.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/signal_handler.cpp" > CMakeFiles/Assignment1.dir/signal_handler.cpp.i
 
 CMakeFiles/Assignment1.dir/signal_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Assignment1.dir/signal_handler.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/signal_handler.cpp" -o CMakeFiles/Assignment1.dir/signal_handler.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/signal_handler.cpp" -o CMakeFiles/Assignment1.dir/signal_handler.cpp.s
 
 # Object files for target Assignment1
 Assignment1_OBJECTS = \
@@ -155,7 +155,7 @@ Assignment1: CMakeFiles/Assignment1.dir/process_handler.cpp.o
 Assignment1: CMakeFiles/Assignment1.dir/signal_handler.cpp.o
 Assignment1: CMakeFiles/Assignment1.dir/build.make
 Assignment1: CMakeFiles/Assignment1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Assignment1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Assignment1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Assignment1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -168,6 +168,6 @@ CMakeFiles/Assignment1.dir/clean:
 .PHONY : CMakeFiles/Assignment1.dir/clean
 
 CMakeFiles/Assignment1.dir/depend:
-	cd "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug" "/mnt/c/Users/Ben/Documents/CMPUT 379 Testing/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1" "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1" "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug" "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug" "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment1/cmake-build-debug/CMakeFiles/Assignment1.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Assignment1.dir/depend
 

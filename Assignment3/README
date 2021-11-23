@@ -1,0 +1,26 @@
+CMPUT 379 Assignment 3
+Name: Benjamin Kong
+CCID: bkong
+
+Files:
+- src (contains client and server directories)
+    - Server (contains source files for server)
+        - server.cpp (server entry point)
+    - Client (contains source files for client)
+        - client.cpp (client entry point)
+- Makefile (used to compile and link the server and client programs)
+- README (provides assumptions and instructions)
+
+Assumptions:
+- The `port` number must be in the range 5,000 to 64,000.
+
+Approach:
+- TODO
+
+Instructions (server):
+1. In the directory with `Makefile`, run `make server`. This will create the server executable.
+2. Run `./server port` to start the server where `port` is the port number the server will listen to.
+
+Instructions (client):
+1. In the directory with `Makefile`, run `make client`. This will create the client executable.
+2. Run `./client port ip-address` to start the client where `port` is the port number the server will read from and `ip-address` is the IP address of the machine that is hosting the server.

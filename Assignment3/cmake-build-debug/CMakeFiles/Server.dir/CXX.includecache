@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server.cpp
+cstdio
+-
+cstring
+-
+cstdlib
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+pthread.h
+-
+

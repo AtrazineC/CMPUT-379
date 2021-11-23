@@ -1,0 +1,242 @@
+  0.000 ID= 1      Ask             
+  0.000 ID= 6      Ask             
+  0.000 ID= 2      Ask             
+  0.000 ID= 7      Ask             
+  0.000 ID= 3      Ask             
+  0.000 ID= 4      Ask             
+  0.000 ID= 5      Ask             
+  0.000 ID= 8      Ask             
+  0.000 ID= 9      Ask             
+  0.001 ID=10      Ask             
+  0.001 ID=11      Ask             
+  0.001 ID=12      Ask             
+  0.001 ID=13      Ask             
+  0.001 ID=14      Ask             
+  0.001 ID=15      Ask             
+  0.001 ID=16      Ask             
+  0.001 ID=17      Ask             
+  0.001 ID=18      Ask             
+  0.001 ID=19      Ask             
+  0.001 ID=20      Ask             
+  0.001 ID=21      Ask             
+  0.001 ID=22      Ask             
+  0.001 ID=23      Ask             
+  0.001 ID=24      Ask             
+  0.001 ID=25      Ask             
+  0.001 ID=26      Ask             
+  0.001 ID=27      Ask             
+  0.001 ID=28      Ask             
+  0.001 ID=29      Ask             
+  0.001 ID=30      Ask             
+  0.001 ID=31      Ask             
+  0.001 ID=32      Ask             
+  0.001 ID=33      Ask             
+  0.001 ID=34      Ask             
+  0.001 ID=35      Ask             
+  0.001 ID=36      Ask             
+  0.001 ID=37      Ask             
+  0.001 ID=38      Ask             
+  0.001 ID=39      Ask             
+  0.001 ID=40      Ask             
+  0.001 ID=41      Ask             
+  0.001 ID=42      Ask             
+  0.001 ID=43      Ask             
+  0.001 ID=44      Ask             
+  0.001 ID=45      Ask             
+  0.001 ID=46      Ask             
+  0.001 ID=47      Ask             
+  0.001 ID=48      Ask             
+  0.001 ID=49      Ask             
+  0.001 ID=50      Ask             
+  0.001 ID=51      Ask             
+  0.001 ID=52      Ask             
+  0.001 ID=53      Ask             
+  0.001 ID=54      Ask             
+  0.001 ID=55      Ask             
+  0.001 ID=56      Ask             
+  0.001 ID=57      Ask             
+  0.001 ID=58      Ask             
+  0.002 ID=59      Ask             
+  0.002 ID=60      Ask             
+  0.002 ID=61      Ask             
+  0.002 ID=62      Ask             
+  0.002 ID=63      Ask             
+  0.002 ID=64      Ask             
+  0.002 ID=65      Ask             
+  0.002 ID=66      Ask             
+  0.002 ID=67      Ask             
+  0.002 ID=68      Ask             
+  0.002 ID=69      Ask             
+  0.002 ID=70      Ask             
+  0.002 ID=71      Ask             
+  0.002 ID=72      Ask             
+  0.002 ID=73      Ask             
+  0.002 ID=74      Ask             
+  0.002 ID=75      Ask             
+  0.002 ID=76      Ask             
+  0.002 ID=77      Ask             
+  0.002 ID=78      Ask             
+  0.002 ID=79      Ask             
+  0.002 ID=80      Ask             
+  0.002 ID=81      Ask             
+  0.002 ID=82      Ask             
+  0.002 ID=83      Ask             
+  0.002 ID=84      Ask             
+  0.002 ID=85      Ask             
+  0.002 ID=86      Ask             
+  0.002 ID=87      Ask             
+  0.002 ID=88      Ask             
+  0.002 ID=89      Ask             
+  0.002 ID=90      Ask             
+  0.002 ID=91      Ask             
+  0.002 ID=92      Ask             
+  0.002 ID=93      Ask             
+  0.002 ID=94      Ask             
+  0.002 ID=95      Ask             
+  0.002 ID=96      Ask             
+  0.002 ID=97      Ask             
+  0.002 ID=98      Ask             
+  0.002 ID=99      Ask             
+  0.002 ID=100      Ask             
+  0.003 ID= 0 Q= 0 Work           4
+  0.003 ID= 0 Q= 1 Work           2
+  0.003 ID= 1 Q= 0 Receive        2
+  0.003 ID= 0 Q= 0 Work           1
+  0.003 ID= 7 Q= 0 Receive        1
+  0.003 ID= 0 Q= 0 Work           1
+  0.003 ID= 2 Q= 0 Receive        1
+  0.003 ID= 0      Sleep          9
+  0.003 ID= 6 Q= 0 Receive        4
+  0.003 ID= 7      Complete       1
+  0.003 ID= 7      Ask             
+  0.003 ID= 2      Complete       1
+  0.003 ID= 2      Ask             
+  0.004 ID= 1      Complete       2
+  0.004 ID= 1      Ask             
+  0.005 ID= 6      Complete       4
+  0.005 ID= 6      Ask             
+  0.093 ID= 0 Q= 0 Work           5
+  0.093 ID= 0      Sleep          1
+  0.093 ID= 3 Q= 0 Receive        5
+  0.096 ID= 3      Complete       5
+  0.096 ID= 3      Ask             
+  0.103 ID= 0 Q= 0 Work           1
+  0.103 ID= 0 Q= 1 Work           1
+  0.103 ID= 5 Q= 1 Receive        1
+  0.103 ID= 4 Q= 0 Receive        1
+  0.103 ID= 0 Q= 0 Work           1
+  0.103 ID= 0      End             
+  0.104 ID= 5      Complete       1
+  0.104 ID= 5      Ask             
+  0.104 ID= 4      Complete       1
+  0.104 ID= 4      Ask             
+  0.104 ID= 3 Q= 0 Receive        1
+  0.105 ID= 3      Complete       1
+  0.105 ID= 3      Ask             
+Summary:
+    Work             8
+    Ask            108
+    Receive          8
+    Complete         8
+    Sleep            2
+    Thread 1         1
+    Thread 2         1
+    Thread 3         2
+    Thread 4         1
+    Thread 5         1
+    Thread 6         1
+    Thread 7         1
+    Thread 8         0
+    Thread 9         0
+    Thread 10        0
+    Thread 11        0
+    Thread 12        0
+    Thread 13        0
+    Thread 14        0
+    Thread 15        0
+    Thread 16        0
+    Thread 17        0
+    Thread 18        0
+    Thread 19        0
+    Thread 20        0
+    Thread 21        0
+    Thread 22        0
+    Thread 23        0
+    Thread 24        0
+    Thread 25        0
+    Thread 26        0
+    Thread 27        0
+    Thread 28        0
+    Thread 29        0
+    Thread 30        0
+    Thread 31        0
+    Thread 32        0
+    Thread 33        0
+    Thread 34        0
+    Thread 35        0
+    Thread 36        0
+    Thread 37        0
+    Thread 38        0
+    Thread 39        0
+    Thread 40        0
+    Thread 41        0
+    Thread 42        0
+    Thread 43        0
+    Thread 44        0
+    Thread 45        0
+    Thread 46        0
+    Thread 47        0
+    Thread 48        0
+    Thread 49        0
+    Thread 50        0
+    Thread 51        0
+    Thread 52        0
+    Thread 53        0
+    Thread 54        0
+    Thread 55        0
+    Thread 56        0
+    Thread 57        0
+    Thread 58        0
+    Thread 59        0
+    Thread 60        0
+    Thread 61        0
+    Thread 62        0
+    Thread 63        0
+    Thread 64        0
+    Thread 65        0
+    Thread 66        0
+    Thread 67        0
+    Thread 68        0
+    Thread 69        0
+    Thread 70        0
+    Thread 71        0
+    Thread 72        0
+    Thread 73        0
+    Thread 74        0
+    Thread 75        0
+    Thread 76        0
+    Thread 77        0
+    Thread 78        0
+    Thread 79        0
+    Thread 80        0
+    Thread 81        0
+    Thread 82        0
+    Thread 83        0
+    Thread 84        0
+    Thread 85        0
+    Thread 86        0
+    Thread 87        0
+    Thread 88        0
+    Thread 89        0
+    Thread 90        0
+    Thread 91        0
+    Thread 92        0
+    Thread 93        0
+    Thread 94        0
+    Thread 95        0
+    Thread 96        0
+    Thread 97        0
+    Thread 98        0
+    Thread 99        0
+    Thread 100       0
+Transactions per second: 76.03

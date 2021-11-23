@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/command.h
+iostream
+-
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/consumer.cpp
+consumer.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/consumer.h
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/consumer.h
+pthread.h
+-
+command.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/command.h
+shared_data.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/shared_data.h
+tands.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/tands.h
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/main.cpp
+iostream
+-
+task_manager.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/task_manager.h
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/shared_data.cpp
+shared_data.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/shared_data.h
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/shared_data.h
+cstdio
+-
+queue
+-
+iostream
+-
+pthread.h
+-
+chrono
+-
+command.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/command.h
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/tands.h
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/task_manager.cpp
+task_manager.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/task_manager.h
+
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/task_manager.h
+vector
+-
+shared_data.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/shared_data.h
+command.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/command.h
+consumer.h
+/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment2/src/consumer.h
+
