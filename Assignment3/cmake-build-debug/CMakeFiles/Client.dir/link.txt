@@ -1,1 +1,1 @@
-/usr/bin/c++   -pthread -g   CMakeFiles/Client.dir/src/Client/client.cpp.o  -o Client 
+/usr/bin/c++   -pthread -g   CMakeFiles/Client.dir/src/Client/client.cpp.o CMakeFiles/Client.dir/src/Client/command.cpp.o CMakeFiles/Client.dir/src/Client/client_logger.cpp.o CMakeFiles/Client.dir/src/Common/util.cpp.o CMakeFiles/Client.dir/src/Common/tands.cpp.o CMakeFiles/Client.dir/src/Client/client_connection_handler.cpp.o  -o Client 

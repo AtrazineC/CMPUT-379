@@ -1,61 +1,65 @@
-#include <stdio.h>
-#include <string.h>
+#include <iostream>
+#include <cstdio>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <cstdlib>
+#include <climits>
+#include <sys/poll.h>
 
+#include "common.h"
+#include "server_logger.h"
+#include "transaction_handler.h"
+#include "server_connection_handler.h"
+
+using namespace std;
+
+/**
+ * Server entry point
+ */
 int main(int argc, char *argv[]) {
-    int socket_desc, client_sock, c, read_size;
-    struct sockaddr_in server, client;
-    char client_message[2000];
-
-    //Create socket
-    socket_desc = socket(AF_INET, SOCK_STREAM, 0);
-    if (socket_desc == -1) {
-        printf("Could not create socket");
-    }
-    puts("Socket created");
-
-    //Prepare the sockaddr_in structure
-    server.sin_family = AF_INET;
-    server.sin_addr.s_addr = INADDR_ANY;
-    server.sin_port = htons(8888);
-
-    //Bind
-    if (bind(socket_desc, (struct sockaddr *)&server, sizeof(server)) < 0) {
-        //print the error message
-        perror("bind failed. Error");
-        return 1;
-    }
-    puts("bind done");
-
-    //Listen
-    listen(socket_desc, 3);
-
-    //Accept and incoming connection
-    puts("Waiting for incoming connections...");
-    c = sizeof(struct sockaddr_in);
-
-    //accept connection from an incoming client
-    client_sock = accept(socket_desc, (struct sockaddr *)&client, (socklen_t *)&c);
-    if (client_sock < 0) {
-        perror("accept failed");
-        return 1;
-    }
-    puts("Connection accepted");
-
-    //Receive a message from client
-    while ((read_size = recv(client_sock, client_message, 2000, 0)) > 0) {
-        //Send the message back to client
-        write(client_sock, client_message, strlen(client_message));
+    // Check minimum number of arguments was provided
+    if (argc < 2) {
+        fprintf(stderr, "Error: must include port number.\n");
+        exit(EXIT_FAILURE);
     }
 
-    if (read_size == 0) {
-        puts("Client disconnected");
-        fflush(stdout);
-    } else if (read_size == -1) {
-        perror("recv failed");
+    // Get initial data
+    int port = atoi(argv[1]);
+    pid_t pid = getpid();
+    char host_name[HOST_NAME_MAX];
+
+    // Get host name
+    if (gethostname(host_name, HOST_NAME_MAX) < 0) {
+        fprintf(stderr, "Error: failed to get host name\n");
+        exit(EXIT_FAILURE);
     }
 
-    return 0;
+    // Verify port number
+    if (port < MIN_PORT_VALUE || port > MAX_PORT_VALUE) {
+        fprintf(stderr, "Error: port number must be between %d and %d.\n", MIN_PORT_VALUE, MAX_PORT_VALUE);
+        exit(EXIT_FAILURE);
+    }
+
+    // Initialize logger, transaction handler, and connection handler
+    auto *server_logger = new ServerLogger(port, pid, host_name);
+    auto *transaction_handler = new TransactionHandler(server_logger);
+    auto *connection_handler = new ServerConnectionHandler(port, transaction_handler);
+
+    // Server loops to handle connections
+    // Will return false when server times out
+    while (connection_handler->run());
+
+    // Close connection and output summary
+    server_logger->finish(transaction_handler->get_transaction_count(),
+                          transaction_handler->get_client_transaction_map(),
+                          transaction_handler->get_first_transaction_start_time(),
+                          transaction_handler->get_latest_transaction_finish_time());
+
+    // Clean up
+    delete server_logger;
+    delete transaction_handler;
+    delete connection_handler;
+
+    return EXIT_SUCCESS;
 }

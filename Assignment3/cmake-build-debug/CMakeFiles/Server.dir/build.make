@@ -70,17 +70,107 @@ CMakeFiles/Server.dir/src/Server/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Server/server.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server.cpp" -o CMakeFiles/Server.dir/src/Server/server.cpp.s
 
+CMakeFiles/Server.dir/src/Server/server_logger.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/Server/server_logger.cpp.o: ../src/Server/server_logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/src/Server/server_logger.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Server/server_logger.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_logger.cpp"
+
+CMakeFiles/Server.dir/src/Server/server_logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Server/server_logger.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_logger.cpp" > CMakeFiles/Server.dir/src/Server/server_logger.cpp.i
+
+CMakeFiles/Server.dir/src/Server/server_logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Server/server_logger.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_logger.cpp" -o CMakeFiles/Server.dir/src/Server/server_logger.cpp.s
+
+CMakeFiles/Server.dir/src/Common/util.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/Common/util.cpp.o: ../src/Common/util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/src/Common/util.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Common/util.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/util.cpp"
+
+CMakeFiles/Server.dir/src/Common/util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Common/util.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/util.cpp" > CMakeFiles/Server.dir/src/Common/util.cpp.i
+
+CMakeFiles/Server.dir/src/Common/util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Common/util.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/util.cpp" -o CMakeFiles/Server.dir/src/Common/util.cpp.s
+
+CMakeFiles/Server.dir/src/Common/tands.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/Common/tands.cpp.o: ../src/Common/tands.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Server.dir/src/Common/tands.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Common/tands.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/tands.cpp"
+
+CMakeFiles/Server.dir/src/Common/tands.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Common/tands.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/tands.cpp" > CMakeFiles/Server.dir/src/Common/tands.cpp.i
+
+CMakeFiles/Server.dir/src/Common/tands.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Common/tands.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/tands.cpp" -o CMakeFiles/Server.dir/src/Common/tands.cpp.s
+
+CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.o: ../src/Server/transaction_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/transaction_handler.cpp"
+
+CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/transaction_handler.cpp" > CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.i
+
+CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/transaction_handler.cpp" -o CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.s
+
+CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.o: ../src/Server/server_connection_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_connection_handler.cpp"
+
+CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_connection_handler.cpp" > CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.i
+
+CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_connection_handler.cpp" -o CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.s
+
+CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.o: ../src/Server/fd_array_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.o -c "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/fd_array_handler.cpp"
+
+CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/fd_array_handler.cpp" > CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.i
+
+CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/fd_array_handler.cpp" -o CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.s
+
 # Object files for target Server
 Server_OBJECTS = \
-"CMakeFiles/Server.dir/src/Server/server.cpp.o"
+"CMakeFiles/Server.dir/src/Server/server.cpp.o" \
+"CMakeFiles/Server.dir/src/Server/server_logger.cpp.o" \
+"CMakeFiles/Server.dir/src/Common/util.cpp.o" \
+"CMakeFiles/Server.dir/src/Common/tands.cpp.o" \
+"CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.o" \
+"CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.o" \
+"CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.o"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
 
 Server: CMakeFiles/Server.dir/src/Server/server.cpp.o
+Server: CMakeFiles/Server.dir/src/Server/server_logger.cpp.o
+Server: CMakeFiles/Server.dir/src/Common/util.cpp.o
+Server: CMakeFiles/Server.dir/src/Common/tands.cpp.o
+Server: CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.o
+Server: CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.o
+Server: CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

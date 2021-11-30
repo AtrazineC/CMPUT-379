@@ -163,6 +163,174 @@ src/Client/client.cpp.s:
 	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/client.cpp.s
 .PHONY : src/Client/client.cpp.s
 
+src/Client/client_connection_handler.o: src/Client/client_connection_handler.cpp.o
+
+.PHONY : src/Client/client_connection_handler.o
+
+# target to build an object file
+src/Client/client_connection_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/client_connection_handler.cpp.o
+.PHONY : src/Client/client_connection_handler.cpp.o
+
+src/Client/client_connection_handler.i: src/Client/client_connection_handler.cpp.i
+
+.PHONY : src/Client/client_connection_handler.i
+
+# target to preprocess a source file
+src/Client/client_connection_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/client_connection_handler.cpp.i
+.PHONY : src/Client/client_connection_handler.cpp.i
+
+src/Client/client_connection_handler.s: src/Client/client_connection_handler.cpp.s
+
+.PHONY : src/Client/client_connection_handler.s
+
+# target to generate assembly for a file
+src/Client/client_connection_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/client_connection_handler.cpp.s
+.PHONY : src/Client/client_connection_handler.cpp.s
+
+src/Client/client_logger.o: src/Client/client_logger.cpp.o
+
+.PHONY : src/Client/client_logger.o
+
+# target to build an object file
+src/Client/client_logger.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/client_logger.cpp.o
+.PHONY : src/Client/client_logger.cpp.o
+
+src/Client/client_logger.i: src/Client/client_logger.cpp.i
+
+.PHONY : src/Client/client_logger.i
+
+# target to preprocess a source file
+src/Client/client_logger.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/client_logger.cpp.i
+.PHONY : src/Client/client_logger.cpp.i
+
+src/Client/client_logger.s: src/Client/client_logger.cpp.s
+
+.PHONY : src/Client/client_logger.s
+
+# target to generate assembly for a file
+src/Client/client_logger.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/client_logger.cpp.s
+.PHONY : src/Client/client_logger.cpp.s
+
+src/Client/command.o: src/Client/command.cpp.o
+
+.PHONY : src/Client/command.o
+
+# target to build an object file
+src/Client/command.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/command.cpp.o
+.PHONY : src/Client/command.cpp.o
+
+src/Client/command.i: src/Client/command.cpp.i
+
+.PHONY : src/Client/command.i
+
+# target to preprocess a source file
+src/Client/command.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/command.cpp.i
+.PHONY : src/Client/command.cpp.i
+
+src/Client/command.s: src/Client/command.cpp.s
+
+.PHONY : src/Client/command.s
+
+# target to generate assembly for a file
+src/Client/command.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client/command.cpp.s
+.PHONY : src/Client/command.cpp.s
+
+src/Common/tands.o: src/Common/tands.cpp.o
+
+.PHONY : src/Common/tands.o
+
+# target to build an object file
+src/Common/tands.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Common/tands.cpp.o
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Common/tands.cpp.o
+.PHONY : src/Common/tands.cpp.o
+
+src/Common/tands.i: src/Common/tands.cpp.i
+
+.PHONY : src/Common/tands.i
+
+# target to preprocess a source file
+src/Common/tands.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Common/tands.cpp.i
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Common/tands.cpp.i
+.PHONY : src/Common/tands.cpp.i
+
+src/Common/tands.s: src/Common/tands.cpp.s
+
+.PHONY : src/Common/tands.s
+
+# target to generate assembly for a file
+src/Common/tands.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Common/tands.cpp.s
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Common/tands.cpp.s
+.PHONY : src/Common/tands.cpp.s
+
+src/Common/util.o: src/Common/util.cpp.o
+
+.PHONY : src/Common/util.o
+
+# target to build an object file
+src/Common/util.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Common/util.cpp.o
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Common/util.cpp.o
+.PHONY : src/Common/util.cpp.o
+
+src/Common/util.i: src/Common/util.cpp.i
+
+.PHONY : src/Common/util.i
+
+# target to preprocess a source file
+src/Common/util.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Common/util.cpp.i
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Common/util.cpp.i
+.PHONY : src/Common/util.cpp.i
+
+src/Common/util.s: src/Common/util.cpp.s
+
+.PHONY : src/Common/util.s
+
+# target to generate assembly for a file
+src/Common/util.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Common/util.cpp.s
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Common/util.cpp.s
+.PHONY : src/Common/util.cpp.s
+
+src/Server/fd_array_handler.o: src/Server/fd_array_handler.cpp.o
+
+.PHONY : src/Server/fd_array_handler.o
+
+# target to build an object file
+src/Server/fd_array_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.o
+.PHONY : src/Server/fd_array_handler.cpp.o
+
+src/Server/fd_array_handler.i: src/Server/fd_array_handler.cpp.i
+
+.PHONY : src/Server/fd_array_handler.i
+
+# target to preprocess a source file
+src/Server/fd_array_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.i
+.PHONY : src/Server/fd_array_handler.cpp.i
+
+src/Server/fd_array_handler.s: src/Server/fd_array_handler.cpp.s
+
+.PHONY : src/Server/fd_array_handler.s
+
+# target to generate assembly for a file
+src/Server/fd_array_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/fd_array_handler.cpp.s
+.PHONY : src/Server/fd_array_handler.cpp.s
+
 src/Server/server.o: src/Server/server.cpp.o
 
 .PHONY : src/Server/server.o
@@ -190,6 +358,87 @@ src/Server/server.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/server.cpp.s
 .PHONY : src/Server/server.cpp.s
 
+src/Server/server_connection_handler.o: src/Server/server_connection_handler.cpp.o
+
+.PHONY : src/Server/server_connection_handler.o
+
+# target to build an object file
+src/Server/server_connection_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.o
+.PHONY : src/Server/server_connection_handler.cpp.o
+
+src/Server/server_connection_handler.i: src/Server/server_connection_handler.cpp.i
+
+.PHONY : src/Server/server_connection_handler.i
+
+# target to preprocess a source file
+src/Server/server_connection_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.i
+.PHONY : src/Server/server_connection_handler.cpp.i
+
+src/Server/server_connection_handler.s: src/Server/server_connection_handler.cpp.s
+
+.PHONY : src/Server/server_connection_handler.s
+
+# target to generate assembly for a file
+src/Server/server_connection_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/server_connection_handler.cpp.s
+.PHONY : src/Server/server_connection_handler.cpp.s
+
+src/Server/server_logger.o: src/Server/server_logger.cpp.o
+
+.PHONY : src/Server/server_logger.o
+
+# target to build an object file
+src/Server/server_logger.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/server_logger.cpp.o
+.PHONY : src/Server/server_logger.cpp.o
+
+src/Server/server_logger.i: src/Server/server_logger.cpp.i
+
+.PHONY : src/Server/server_logger.i
+
+# target to preprocess a source file
+src/Server/server_logger.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/server_logger.cpp.i
+.PHONY : src/Server/server_logger.cpp.i
+
+src/Server/server_logger.s: src/Server/server_logger.cpp.s
+
+.PHONY : src/Server/server_logger.s
+
+# target to generate assembly for a file
+src/Server/server_logger.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/server_logger.cpp.s
+.PHONY : src/Server/server_logger.cpp.s
+
+src/Server/transaction_handler.o: src/Server/transaction_handler.cpp.o
+
+.PHONY : src/Server/transaction_handler.o
+
+# target to build an object file
+src/Server/transaction_handler.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.o
+.PHONY : src/Server/transaction_handler.cpp.o
+
+src/Server/transaction_handler.i: src/Server/transaction_handler.cpp.i
+
+.PHONY : src/Server/transaction_handler.i
+
+# target to preprocess a source file
+src/Server/transaction_handler.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.i
+.PHONY : src/Server/transaction_handler.cpp.i
+
+src/Server/transaction_handler.s: src/Server/transaction_handler.cpp.s
+
+.PHONY : src/Server/transaction_handler.s
+
+# target to generate assembly for a file
+src/Server/transaction_handler.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Server/transaction_handler.cpp.s
+.PHONY : src/Server/transaction_handler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -203,9 +452,36 @@ help:
 	@echo "... src/Client/client.o"
 	@echo "... src/Client/client.i"
 	@echo "... src/Client/client.s"
+	@echo "... src/Client/client_connection_handler.o"
+	@echo "... src/Client/client_connection_handler.i"
+	@echo "... src/Client/client_connection_handler.s"
+	@echo "... src/Client/client_logger.o"
+	@echo "... src/Client/client_logger.i"
+	@echo "... src/Client/client_logger.s"
+	@echo "... src/Client/command.o"
+	@echo "... src/Client/command.i"
+	@echo "... src/Client/command.s"
+	@echo "... src/Common/tands.o"
+	@echo "... src/Common/tands.i"
+	@echo "... src/Common/tands.s"
+	@echo "... src/Common/util.o"
+	@echo "... src/Common/util.i"
+	@echo "... src/Common/util.s"
+	@echo "... src/Server/fd_array_handler.o"
+	@echo "... src/Server/fd_array_handler.i"
+	@echo "... src/Server/fd_array_handler.s"
 	@echo "... src/Server/server.o"
 	@echo "... src/Server/server.i"
 	@echo "... src/Server/server.s"
+	@echo "... src/Server/server_connection_handler.o"
+	@echo "... src/Server/server_connection_handler.i"
+	@echo "... src/Server/server_connection_handler.s"
+	@echo "... src/Server/server_logger.o"
+	@echo "... src/Server/server_logger.i"
+	@echo "... src/Server/server_logger.s"
+	@echo "... src/Server/transaction_handler.o"
+	@echo "... src/Server/transaction_handler.i"
+	@echo "... src/Server/transaction_handler.s"
 .PHONY : help
 
 

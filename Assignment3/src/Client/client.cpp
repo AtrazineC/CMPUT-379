@@ -1,54 +1,86 @@
+#include <iostream>
 #include <cstdio>
-#include <cstring>
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <cstdlib>
+#include <climits>
 
+#include "common.h"
+#include "command.h"
+#include "client_logger.h"
+#include "tands.h"
+#include "client_connection_handler.h"
+
+#define IP_MAX_LENGTH 100
+
+using namespace std;
+
+/**
+ * Client entry point
+ */
 int main(int argc, char *argv[]) {
-    int sock;
-    struct sockaddr_in server;
-    char message[1000], server_reply[2000];
-
-    //Create socket
-    sock = socket(AF_INET, SOCK_STREAM, 0);
-    if (sock == -1) {
-        printf("Could not create socket");
-    }
-    puts("Socket created");
-
-    server.sin_addr.s_addr = inet_addr("127.0.0.1");
-    server.sin_family = AF_INET;
-    server.sin_port = htons(8888);
-
-    //Connect to remote server
-    if (connect(sock, (struct sockaddr *)&server, sizeof(server)) < 0) {
-        perror("connect failed. Error");
-        return 1;
+    // Check minimum number of arguments was provided
+    if (argc < 3) {
+        fprintf(stderr, "Error: must include port number and ip address.\n");
+        exit(EXIT_FAILURE);
     }
 
-    puts("Connected\n");
+    // Get initial data
+    int port = atoi(argv[1]);
+    pid_t pid = getpid();
+    char host_name[HOST_NAME_MAX];
+    char server_ip_address[IP_MAX_LENGTH];
 
-    //keep communicating with server
-    while (true) {
-        printf("Enter message : ");
-        scanf("%s", message);
+    // Get host name
+    if (gethostname(host_name, HOST_NAME_MAX) < 0) {
+        fprintf(stderr, "Error: failed to get host name\n");
+        exit(EXIT_FAILURE);
+    }
 
-        //Send some data
-        if (send(sock, message, strlen(message), 0) < 0) {
-            puts("Send failed");
-            return 1;
+    // Get ip address
+    sprintf(server_ip_address, "%s", argv[2]);
+
+    // Verify port number
+    if (port < MIN_PORT_VALUE || port > MAX_PORT_VALUE) {
+        fprintf(stderr, "Error: port number must be between %d and %d.\n", MIN_PORT_VALUE, MAX_PORT_VALUE);
+        exit(EXIT_FAILURE);
+    }
+
+    // Initialize logger and connection handler
+    auto *client_logger = new ClientLogger(port, pid, host_name, server_ip_address);
+    auto *client_connection_handler = new ClientConnectionHandler(port, pid, host_name, server_ip_address);
+
+    // Consume commands from standard input
+    Command command = get_next_command();
+
+    while (command.command_type != Command::CommandType::close) {
+        if (command.valid) {
+            // Log command
+            client_logger->log_command(&command);
+
+            // Process command
+            if (command.command_type == Command::CommandType::transaction) {
+                // Send command argument to server
+                int transaction_id = client_connection_handler->send_command(command.n);
+
+                // Log response
+                client_logger->log_receive(transaction_id);
+            } else if (command.command_type == Command::CommandType::sleep) {
+                // Sleep
+                Sleep(command.n);
+            }
         }
 
-        //Receive a reply from the server
-        if (recv(sock, server_reply, 2000, 0) < 0) {
-            puts("recv failed");
-            break;
-        }
-
-        puts("Server reply :");
-        puts(server_reply);
+        command = get_next_command();
     }
 
-    close(sock);
-    return 0;
+    // Close connection and output summary
+    client_logger->finish();
+
+    // Clean up
+    delete client_logger;
+    delete client_connection_handler;
+
+    return EXIT_SUCCESS;
 }

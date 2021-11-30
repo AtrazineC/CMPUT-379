@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread -g   -std=gnu++2a
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I"/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common" 
 

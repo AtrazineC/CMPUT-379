@@ -6,21 +6,56 @@ Files:
 - src (contains client and server directories)
     - Server (contains source files for server)
         - server.cpp (server entry point)
+        - server_logger.h (server logger header file, contains class responsible for logging)
+        - server_logger.cpp (server logger cpp file)
+        - transaction_handler.h (transaction handler header file, contains class responsible for running transactions)
+        - transaction_handler.cpp (transaction handler cpp file)
     - Client (contains source files for client)
         - client.cpp (client entry point)
+        - client_logger.h (client logger header file, contains class responsible for logging)
+        - client_logger.cpp (client logger cpp file)
+        - command.h (command header file, responsible for parsing user input such as `T<n>`)
+        - command.cpp (command cpp file)
+    - Common (contains source files shared between server and client)
+        - common.h (common header file, contains shared constants)
+        - tands.h (tands header file, contains `Trans` and `Sleep` commands provided in class)
+        - tands.cpp (tands cpp file)
+        - util.h (util header file, contains shared utility functions)
+        - util.cpp (util cpp file)
 - Makefile (used to compile and link the server and client programs)
 - README (provides assumptions and instructions)
 
 Assumptions:
+- Number of clients must not exceed 50.
 - The `port` number must be in the range 5,000 to 64,000.
+- All inputs must be valid. Unexpected behavior may occur if inputs are not valid.
+- Server will time out after 30 seconds of inactivity. If clients are still running, their behavior will be unpredictable.
+- There may be output formatting issues if `n` for a transaction or sleep is greater than 999.
 
 Approach:
-- TODO
+- Server:
+    1. Create/bind a socket and listen to it.
+    2. Uses poll to handle multiple incoming connections and read incoming data from multiple clients.
+    3. Parse incoming data, and run the corresponding command.
+    4. Once command is finished running, send data back to the client that sent the command.
+    5. Log relevant events.
+    6. Upon exit, generate summary.
+- Client:
+    1. Attempt to connect to the server.
+    2. Read commands from standard input.
+    3. If the command is for a transaction, send the transaction data to the server, wait for a response, and log relevant events.
+    4. If the command is a sleep command, sleep.
+    5. Upon exit, generate summary.
 
 Instructions (server):
 1. In the directory with `Makefile`, run `make server`. This will create the server executable.
 2. Run `./server port` to start the server where `port` is the port number the server will listen to.
+3. Server will time out after 30 seconds of inactivity and output a log file.
 
 Instructions (client):
 1. In the directory with `Makefile`, run `make client`. This will create the client executable.
 2. Run `./client port ip-address` to start the client where `port` is the port number the server will read from and `ip-address` is the IP address of the machine that is hosting the server.
+3. Enter `T<n>` to send a transaction to the server and `S<n>` to have the client sleep, where `n` is a positive integer.
+4. Press Ctrl+D to stop the client. The client will output a log file once stopped.
+
+Instructions (man pages): TODO

@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -66,6 +67,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -88,6 +90,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -110,6 +113,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -129,7 +133,69 @@
 		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Client/client.cpp">
 			<Option target="Client"/>
 		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Client/client_connection_handler.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Client/client_connection_handler.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Client/client_logger.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Client/client_logger.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Client/command.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Client/command.h">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/common.h">
+			<Option target="Client"/>
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/tands.cpp">
+			<Option target="Client"/>
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/tands.h">
+			<Option target="Client"/>
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/util.cpp">
+			<Option target="Client"/>
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Common/util.h">
+			<Option target="Client"/>
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/fd_array_handler.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/fd_array_handler.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_connection_handler.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_connection_handler.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_logger.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/server_logger.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/transaction_handler.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/src/Server/transaction_handler.h">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Ben/OneDrive/10 - 2021 Fall/CMPUT 379/Assignment3/CMakeLists.txt">
