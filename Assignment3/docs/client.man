@@ -1,0 +1,28 @@
+.TH CLIENT 1 "DECEMBER 2021" Linux "User Manuals"
+.SH NAME
+client \- reads commands from stdin and sends transaction requests to the server
+.SH SYNOPSIS
+.B client
+.I port
+.I ip_address
+.B
+.SH DESCRIPTION
+.B client
+is responsible for reading commands from stdin and sending transactions to the server for processing.
+It is also possible for a command to tell the client to sleep for some given time. When a client reads a transaction from
+stdin, it sends it to the server and waits for a response from the server. The response will be a unique transaction id from the server.
+When the client closes, it will produce an output log file.
+.SH EXAMPLES
+.B client
+.I 6000
+.I 127.0.0.1
+.B
+.RS
+Attempts to connect to a server at 127.0.0.1 on port 6000.
+.RE
+.SH BUGS
+When the server times out, the client is not notified. The client may experience odd behavior if the server has timed out.
+.SH AUTHOR
+Benjamin Kong
+.SH "SEE ALSO"
+.BR server(1)

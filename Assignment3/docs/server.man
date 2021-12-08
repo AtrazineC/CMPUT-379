@@ -1,0 +1,30 @@
+.TH SERVER 1 "DECEMBER 2021" Linux "User Manuals"
+.SH NAME
+server \- receive and processes transaction requests from clients
+.SH SYNOPSIS
+.B server
+.I port
+.B
+.SH DESCRIPTION
+.B server 
+is responsible for accepting client connections and processing client transactions. The server initializes a socket on
+.I port
+and waits for clients to connect. The server first creates a socket and listens to it.
+It then uses poll() to handle multiple incoming
+connections and read incoming data from those connections. When a client sends a transaction request, the server parses the data
+and runs the corresponding transaction. Once the transaction is finished running, the transaction id is sent back to the
+client that sent the transaction request. The server times out after 30 seconds of inactivity and outputs a log file.
+.SH EXAMPLES
+.B server
+.I 6000
+.B
+.RS
+Starts the server on port 6000.
+.RE
+.SH BUGS
+When the server times out, clients that are still connected are not notified. The clients may experience odd behavior once
+the server has timed out.
+.SH AUTHOR
+Benjamin Kong
+.SH "SEE ALSO"
+.BR client(1)

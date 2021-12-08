@@ -56,7 +56,3 @@ double TransactionHandler::get_latest_transaction_finish_time() {
 map<string, int> *TransactionHandler::get_client_transaction_map() {
     return &client_transaction_map;
 }
-
-double TransactionHandler::get_idle_time() {
-    return get_epoch_time() - latest_transaction_finish_time;
-}

@@ -6,12 +6,18 @@ Files:
 - src (contains client and server directories)
     - Server (contains source files for server)
         - server.cpp (server entry point)
+        - server_connection_handler.h (server connection handler header file, contains class responsible for communication with clients)
+        - server_connection_handler.cpp (server connection handler cpp file)
+        - fd_array_handler.h (file descriptor handler header file, contains wrapper for file descriptor array)
+        - fd_array_handler.cpp (file descriptor handler cpp file)
         - server_logger.h (server logger header file, contains class responsible for logging)
         - server_logger.cpp (server logger cpp file)
         - transaction_handler.h (transaction handler header file, contains class responsible for running transactions)
         - transaction_handler.cpp (transaction handler cpp file)
     - Client (contains source files for client)
         - client.cpp (client entry point)
+        - client_connection_handler.h (client connection handler header file, contains class responsible for communication with server)
+        - client_connection_handler.cpp (client connection cpp file)
         - client_logger.h (client logger header file, contains class responsible for logging)
         - client_logger.cpp (client logger cpp file)
         - command.h (command header file, responsible for parsing user input such as `T<n>`)
@@ -22,7 +28,7 @@ Files:
         - tands.cpp (tands cpp file)
         - util.h (util header file, contains shared utility functions)
         - util.cpp (util cpp file)
-- Makefile (used to compile and link the server and client programs)
+- Makefile (used to compile and link the server and client programs and produce man pages)
 - README (provides assumptions and instructions)
 
 Assumptions:
@@ -58,4 +64,5 @@ Instructions (client):
 3. Enter `T<n>` to send a transaction to the server and `S<n>` to have the client sleep, where `n` is a positive integer.
 4. Press Ctrl+D to stop the client. The client will output a log file once stopped.
 
-Instructions (man pages): TODO
+Instructions (man pages):
+1. In the directory with `Makefile`, run `make man`. This will create server.pdf and client.pdf.

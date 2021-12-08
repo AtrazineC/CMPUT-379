@@ -76,12 +76,6 @@ public:
      * @return
      */
     int perform_transaction(int n, char *client_machine_name, pid_t client_pid);
-
-    /**
-     * Get time since the last transaction finished
-     * @return Time since the last transaction finished
-     */
-    double get_idle_time();
 };
 
 #endif //ASSIGNMENT3_TRANSACTION_HANDLER_H
